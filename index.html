@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎮 Mini Game Center</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎮 Mini Game Center</h1>
+    <p>Select a game below to start playing</p>
+  </header>
+
+  <main>
+    <div class="game-grid">
+      <div class="game-card" onclick="loadGame('https://rockpaperscissors-ai.vercel.app/')">
+        <h2>Rock Paper Scissors</h2>
+        <p>Beat the computer in this classic game.</p>
+      </div>
+      <div class="game-card" onclick="loadGame('https://santatracker.google.com/matching.html')">
+        <h2>Memory Match</h2>
+        <p>Test your memory skills.</p>
+      </div>
+      <div class="game-card" onclick="loadGame('https://snake.io/')">
+        <h2>Snake Game</h2>
+        <p>Feed the snake, avoid crashing!</p>
+      </div>
+      <div class="game-card" onclick="loadGame('https://poki.com/en/g/tic-tac-toe-3')">
+        <h2>Wordle Clone</h2>
+        <p>Guess the 5-letter word in 6 tries.</p>
+      </div>
+      <div class="game-card" onclick="loadGame('https://www.crazygames.com/game/tic-tac-toe')">
+        <h2>Tic Tac Toe</h2>
+        <p>Play against the computer or a friend.</p>
+      </div>
+      <div class="game-card" onclick="loadGame('https://2048game.com/')">
+        <h2>2048</h2>
+        <p>Join numbers to reach 2048.</p>
+      </div>
+      <div class="game-card" onclick="loadGame('https://flappybird.io/')">
+        <h2>Flappy Bird</h2>
+        <p>Fly through the pipes without crashing!</p>
+      </div>
+      <div class="game-card" onclick="loadGame('https://www.ponggame.org/')">
+        <h2>Pong</h2>
+        <p>Classic paddle vs paddle game.</p>
+      </div>
+      <div class="game-card" onclick="loadGame('https://gamesnacks.com/games/5enjropk1ren8')">
+        <h2>Brick Breaker</h2>
+        <p>Break all the bricks with your ball.</p>
+      </div>
+      <div class="game-card" onclick="loadGame('https://kids.nationalgeographic.com/games/quizzes')">
+        <h2>Quiz Game</h2>
+        <p>Answer questions and test your knowledge.</p>
+      </div>
+    </div>
+
+    <iframe id="game-frame" src="" frameborder="0" class="game-frame" title="Game Window"></iframe>
+  </main>
+
+  <footer>
+    <p>© 2025 Mini Game Center | Internship Project | Built with HTML, CSS & JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
